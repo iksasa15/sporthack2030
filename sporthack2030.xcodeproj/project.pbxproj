@@ -6,16 +6,372 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E22156782F68A3A800417A8A /* train_sport_module.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156322F68A3A800417A8A /* train_sport_module.py */; };
+		E22156792F68A3A800417A8A /* rotator_cuff_exercises.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D32F68A3A800417A8A /* rotator_cuff_exercises.py */; };
+		E221567A2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155FE2F68A3A800417A8A /* __init__.py */; };
+		E221567B2F68A3A800417A8A /* 4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565C2F68A3A800417A8A /* 4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */; };
+		E221567C2F68A3A800417A8A /* e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156682F68A3A800417A8A /* e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E221567D2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A72F68A3A800417A8A /* __init__.py */; };
+		E221567E2F68A3A800417A8A /* utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156252F68A3A800417A8A /* utils.py */; };
+		E221567F2F68A3A800417A8A /* test_pose_estimator.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156432F68A3A800417A8A /* test_pose_estimator.py */; };
+		E22156802F68A3A800417A8A /* test_object_tracker.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156402F68A3A800417A8A /* test_object_tracker.py */; };
+		E22156812F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B12F68A3A800417A8A /* __init__.py */; };
+		E22156822F68A3A800417A8A /* sport_profiles.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F12F68A3A800417A8A /* sport_profiles.py */; };
+		E22156832F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155AC2F68A3A800417A8A /* __init__.py */; };
+		E22156842F68A3A800417A8A /* schema.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156102F68A3A800417A8A /* schema.py */; };
+		E22156852F68A3A800417A8A /* PYTHON_CLEANUP.md in Resources */ = {isa = PBXBuildFile; fileRef = E22156722F68A3A800417A8A /* PYTHON_CLEANUP.md */; };
+		E22156862F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B62F68A3A800417A8A /* __init__.py */; };
+		E22156872F68A3A800417A8A /* pose_estimator.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155FB2F68A3A800417A8A /* pose_estimator.py */; };
+		E22156882F68A3A800417A8A /* plank.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E02F68A3A800417A8A /* plank.py */; };
+		E22156892F68A3A800417A8A /* torso_twist.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155AF2F68A3A800417A8A /* torso_twist.py */; };
+		E221568A2F68A3A800417A8A /* main.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156702F68A3A800417A8A /* main.py */; };
+		E221568B2F68A3A800417A8A /* 25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156522F68A3A800417A8A /* 25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E221568C2F68A3A800417A8A /* b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156622F68A3A800417A8A /* b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E221568D2F68A3A800417A8A /* processor.py in Resources */ = {isa = PBXBuildFile; fileRef = E221561D2F68A3A800417A8A /* processor.py */; };
+		E221568E2F68A3A800417A8A /* wall_sit.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E12F68A3A800417A8A /* wall_sit.py */; };
+		E221568F2F68A3A800417A8A /* test_overlay.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156412F68A3A800417A8A /* test_overlay.py */; };
+		E22156902F68A3A800417A8A /* improvement.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156152F68A3A800417A8A /* improvement.py */; };
+		E22156912F68A3A800417A8A /* hip_bridge.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155DF2F68A3A800417A8A /* hip_bridge.py */; };
+		E22156922F68A3A800417A8A /* squat_jump.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A92F68A3A800417A8A /* squat_jump.py */; };
+		E22156932F68A3A800417A8A /* hip_flexor_stretch.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B32F68A3A800417A8A /* hip_flexor_stretch.py */; };
+		E22156942F68A3A800417A8A /* squats.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D82F68A3A800417A8A /* squats.py */; };
+		E22156952F68A3A800417A8A /* d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156662F68A3A800417A8A /* d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156962F68A3A800417A8A /* band_pull_apart.py in Resources */ = {isa = PBXBuildFile; fileRef = E221559C2F68A3A800417A8A /* band_pull_apart.py */; };
+		E22156972F68A3A800417A8A /* hip_rotation_drill.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155BC2F68A3A800417A8A /* hip_rotation_drill.py */; };
+		E22156982F68A3A800417A8A /* evaluator.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155EF2F68A3A800417A8A /* evaluator.py */; };
+		E22156992F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155DA2F68A3A800417A8A /* __init__.py */; };
+		E221569A2F68A3A800417A8A /* hybrid_pose.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F82F68A3A800417A8A /* hybrid_pose.py */; };
+		E221569B2F68A3A800417A8A /* glute_bridge.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B72F68A3A800417A8A /* glute_bridge.py */; };
+		E221569C2F68A3A800417A8A /* 4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564C2F68A3A800417A8A /* 4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E221569D2F68A3A800417A8A /* download_model.py in Resources */ = {isa = PBXBuildFile; fileRef = E221566F2F68A3A800417A8A /* download_model.py */; };
+		E221569E2F68A3A800417A8A /* hip_bridge.py in Resources */ = {isa = PBXBuildFile; fileRef = E221559F2F68A3A800417A8A /* hip_bridge.py */; };
+		E221569F2F68A3A800417A8A /* downward_dog.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E52F68A3A800417A8A /* downward_dog.py */; };
+		E22156A02F68A3A800417A8A /* 4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565E2F68A3A800417A8A /* 4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156A12F68A3A800417A8A /* plank.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D72F68A3A800417A8A /* plank.py */; };
+		E22156A22F68A3A800417A8A /* pose_landmarker_lite.task in Resources */ = {isa = PBXBuildFile; fileRef = E221562B2F68A3A800417A8A /* pose_landmarker_lite.task */; };
+		E22156A32F68A3A800417A8A /* data_store.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156142F68A3A800417A8A /* data_store.py */; };
+		E22156A42F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155DE2F68A3A800417A8A /* __init__.py */; };
+		E22156A52F68A3A800417A8A /* 99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156562F68A3A800417A8A /* 99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156A62F68A3A800417A8A /* band_pull_apart.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D22F68A3A800417A8A /* band_pull_apart.py */; };
+		E22156A72F68A3A800417A8A /* bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156642F68A3A800417A8A /* bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */; };
+		E22156A82F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155CA2F68A3A800417A8A /* __init__.py */; };
+		E22156A92F68A3A800417A8A /* conftest.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156392F68A3A800417A8A /* conftest.py */; };
+		E22156AA2F68A3A800417A8A /* glute_bridges.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155CC2F68A3A800417A8A /* glute_bridges.py */; };
+		E22156AB2F68A3A800417A8A /* exceptions.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156212F68A3A800417A8A /* exceptions.py */; };
+		E22156AC2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E221559B2F68A3A800417A8A /* __init__.py */; };
+		E22156AD2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E221561F2F68A3A800417A8A /* __init__.py */; };
+		E22156AE2F68A3A800417A8A /* sources.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156232F68A3A800417A8A /* sources.py */; };
+		E22156AF2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155ED2F68A3A800417A8A /* __init__.py */; };
+		E22156B02F68A3A800417A8A /* pytest.ini in Resources */ = {isa = PBXBuildFile; fileRef = E22156712F68A3A800417A8A /* pytest.ini */; };
+		E22156B12F68A3A800417A8A /* core_rotation.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A42F68A3A800417A8A /* core_rotation.py */; };
+		E22156B22F68A3A800417A8A /* rotator_cuff.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A52F68A3A800417A8A /* rotator_cuff.py */; };
+		E22156B32F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C62F68A3A800417A8A /* __init__.py */; };
+		E22156B42F68A3A800417A8A /* b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156612F68A3A800417A8A /* b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156B52F68A3A800417A8A /* 3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564B2F68A3A800417A8A /* 3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */; };
+		E22156B62F68A3A800417A8A /* 67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156532F68A3A800417A8A /* 67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156B72F68A3A800417A8A /* 01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156492F68A3A800417A8A /* 01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156B82F68A3A800417A8A /* push_ups.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155AE2F68A3A800417A8A /* push_ups.py */; };
+		E22156B92F68A3A800417A8A /* squat_jump.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155DC2F68A3A800417A8A /* squat_jump.py */; };
+		E22156BA2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156042F68A3A800417A8A /* __init__.py */; };
+		E22156BB2F68A3A800417A8A /* clam_shells.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B22F68A3A800417A8A /* clam_shells.py */; };
+		E22156BC2F68A3A800417A8A /* report.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156162F68A3A800417A8A /* report.py */; };
+		E22156BD2F68A3A800417A8A /* bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156632F68A3A800417A8A /* bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156BE2F68A3A800417A8A /* analyzer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156052F68A3A800417A8A /* analyzer.py */; };
+		E22156BF2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156072F68A3A800417A8A /* __init__.py */; };
+		E22156C02F68A3A800417A8A /* 8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156512F68A3A800417A8A /* 8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156C12F68A3A800417A8A /* object_tracker.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155FA2F68A3A800417A8A /* object_tracker.py */; };
+		E22156C22F68A3A800417A8A /* 2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565A2F68A3A800417A8A /* 2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156C32F68A3A800417A8A /* test_sport_inferencer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156442F68A3A800417A8A /* test_sport_inferencer.py */; };
+		E22156C42F68A3A800417A8A /* 91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156552F68A3A800417A8A /* 91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156C52F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155CF2F68A3A800417A8A /* __init__.py */; };
+		E22156C62F68A3A800417A8A /* yolov8n.pt in Resources */ = {isa = PBXBuildFile; fileRef = E22156752F68A3A800417A8A /* yolov8n.pt */; };
+		E22156C72F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155BF2F68A3A800417A8A /* __init__.py */; };
+		E22156C82F68A3A800417A8A /* a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156602F68A3A800417A8A /* a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156C92F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156122F68A3A800417A8A /* __init__.py */; };
+		E22156CA2F68A3A800417A8A /* app.js in Resources */ = {isa = PBXBuildFile; fileRef = E22156272F68A3A800417A8A /* app.js */; };
+		E22156CB2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D62F68A3A800417A8A /* __init__.py */; };
+		E22156CC2F68A3A800417A8A /* 745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565B2F68A3A800417A8A /* 745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */; };
+		E22156CD2F68A3A800417A8A /* seated_torso_twist.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155BD2F68A3A800417A8A /* seated_torso_twist.py */; };
+		E22156CE2F68A3A800417A8A /* 0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156482F68A3A800417A8A /* 0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156CF2F68A3A800417A8A /* 5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564F2F68A3A800417A8A /* 5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156D02F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156382F68A3A800417A8A /* __init__.py */; };
+		E22156D12F68A3A800417A8A /* config.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156202F68A3A800417A8A /* config.py */; };
+		E22156D22F68A3A800417A8A /* registry.py in Resources */ = {isa = PBXBuildFile; fileRef = E221560F2F68A3A800417A8A /* registry.py */; };
+		E22156D32F68A3A800417A8A /* c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156652F68A3A800417A8A /* c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156D42F68A3A800417A8A /* test_pipeline.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156422F68A3A800417A8A /* test_pipeline.py */; };
+		E22156D52F68A3A800417A8A /* test_sport_integration.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156452F68A3A800417A8A /* test_sport_integration.py */; };
+		E22156D62F68A3A800417A8A /* exporters.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155FF2F68A3A800417A8A /* exporters.py */; };
+		E22156D72F68A3A800417A8A /* band_pull_apart.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C72F68A3A800417A8A /* band_pull_apart.py */; };
+		E22156D82F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155BB2F68A3A800417A8A /* __init__.py */; };
+		E22156D92F68A3A800417A8A /* 04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564E2F68A3A800417A8A /* 04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156DA2F68A3A800417A8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E22156732F68A3A800417A8A /* README.md */; };
+		E22156DB2F68A3A800417A8A /* squats.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B92F68A3A800417A8A /* squats.py */; };
+		E22156DC2F68A3A800417A8A /* seated_torso_twist.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D42F68A3A800417A8A /* seated_torso_twist.py */; };
+		E22156DD2F68A3A800417A8A /* yolov8s.pt in Resources */ = {isa = PBXBuildFile; fileRef = E22156762F68A3A800417A8A /* yolov8s.pt */; };
+		E22156DE2F68A3A800417A8A /* analyzer.py in Resources */ = {isa = PBXBuildFile; fileRef = E221560B2F68A3A800417A8A /* analyzer.py */; };
+		E22156DF2F68A3A800417A8A /* overlay.py in Resources */ = {isa = PBXBuildFile; fileRef = E221561B2F68A3A800417A8A /* overlay.py */; };
+		E22156E02F68A3A800417A8A /* single_leg_stance.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A82F68A3A800417A8A /* single_leg_stance.py */; };
+		E22156E12F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E221560D2F68A3A800417A8A /* __init__.py */; };
+		E22156E22F68A3A800417A8A /* schemas.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F42F68A3A800417A8A /* schemas.py */; };
+		E22156E32F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C42F68A3A800417A8A /* __init__.py */; };
+		E22156E42F68A3A800417A8A /* test_exceptions.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563C2F68A3A800417A8A /* test_exceptions.py */; };
+		E22156E52F68A3A800417A8A /* sport_registry.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156242F68A3A800417A8A /* sport_registry.py */; };
+		E22156E62F68A3A800417A8A /* test_api.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563A2F68A3A800417A8A /* test_api.py */; };
+		E22156E72F68A3A800417A8A /* features.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F02F68A3A800417A8A /* features.py */; };
+		E22156E82F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E221560A2F68A3A800417A8A /* __init__.py */; };
+		E22156E92F68A3A800417A8A /* AUDIT_REPORT.md in Resources */ = {isa = PBXBuildFile; fileRef = E221566D2F68A3A800417A8A /* AUDIT_REPORT.md */; };
+		E22156EA2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F72F68A3A800417A8A /* __init__.py */; };
+		E22156EB2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155EA2F68A3A800417A8A /* __init__.py */; };
+		E22156EC2F68A3A800417A8A /* 78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156542F68A3A800417A8A /* 78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156ED2F68A3A800417A8A /* 486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156582F68A3A800417A8A /* 486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156EE2F68A3A800417A8A /* movement_recognizer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F92F68A3A800417A8A /* movement_recognizer.py */; };
+		E22156EF2F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A32F68A3A800417A8A /* __init__.py */; };
+		E22156F02F68A3A800417A8A /* app.py in Resources */ = {isa = PBXBuildFile; fileRef = E221566B2F68A3A800417A8A /* app.py */; };
+		E22156F12F68A3A800417A8A /* 742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156592F68A3A800417A8A /* 742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156F22F68A3A800417A8A /* tree_pose.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E62F68A3A800417A8A /* tree_pose.py */; };
+		E22156F32F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155D12F68A3A800417A8A /* __init__.py */; };
+		E22156F42F68A3A800417A8A /* sport_inferencer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155FC2F68A3A800417A8A /* sport_inferencer.py */; };
+		E22156F52F68A3A800417A8A /* cat_cow.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E42F68A3A800417A8A /* cat_cow.py */; };
+		E22156F62F68A3A800417A8A /* plank.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A02F68A3A800417A8A /* plank.py */; };
+		E22156F72F68A3A800417A8A /* analyzer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156022F68A3A800417A8A /* analyzer.py */; };
+		E22156F82F68A3A800417A8A /* calf_raises.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155CB2F68A3A800417A8A /* calf_raises.py */; };
+		E22156F92F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E82F68A3A800417A8A /* __init__.py */; };
+		E22156FA2F68A3A800417A8A /* hollow_hold.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C02F68A3A800417A8A /* hollow_hold.py */; };
+		E22156FB2F68A3A800417A8A /* test_exporters.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563D2F68A3A800417A8A /* test_exporters.py */; };
+		E22156FC2F68A3A800417A8A /* 6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156502F68A3A800417A8A /* 6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156FD2F68A3A800417A8A /* 199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156572F68A3A800417A8A /* 199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22156FE2F68A3A800417A8A /* edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156692F68A3A800417A8A /* edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */; };
+		E22156FF2F68A3A800417A8A /* test_utils.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156462F68A3A800417A8A /* test_utils.py */; };
+		E22157002F68A3A800417A8A /* EXERCISES_INDEX.md in Resources */ = {isa = PBXBuildFile; fileRef = E22155EB2F68A3A800417A8A /* EXERCISES_INDEX.md */; };
+		E22157012F68A3A800417A8A /* run_example.py in Resources */ = {isa = PBXBuildFile; fileRef = E221562F2F68A3A800417A8A /* run_example.py */; };
+		E22157022F68A3A800417A8A /* ARCHITECTURE.md in Resources */ = {isa = PBXBuildFile; fileRef = E221566C2F68A3A800417A8A /* ARCHITECTURE.md */; };
+		E22157032F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F32F68A3A800417A8A /* __init__.py */; };
+		E22157042F68A3A800417A8A /* test_movement_recognizer.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563F2F68A3A800417A8A /* test_movement_recognizer.py */; };
+		E22157052F68A3A800417A8A /* calf_raises.py in Resources */ = {isa = PBXBuildFile; fileRef = E221559D2F68A3A800417A8A /* calf_raises.py */; };
+		E22157062F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156012F68A3A800417A8A /* __init__.py */; };
+		E22157072F68A3A800417A8A /* a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565F2F68A3A800417A8A /* a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22157082F68A3A800417A8A /* hip_flexor_stretch.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C82F68A3A800417A8A /* hip_flexor_stretch.py */; };
+		E22157092F68A3A800417A8A /* pipeline.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156222F68A3A800417A8A /* pipeline.py */; };
+		E221570A2F68A3A800417A8A /* landmark_smoother.py in Resources */ = {isa = PBXBuildFile; fileRef = E221561A2F68A3A800417A8A /* landmark_smoother.py */; };
+		E221570B2F68A3A800417A8A /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = E22156292F68A3A800417A8A /* style.css */; };
+		E221570C2F68A3A800417A8A /* band_pull_apart.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155AD2F68A3A800417A8A /* band_pull_apart.py */; };
+		E221570D2F68A3A800417A8A /* base.py in Resources */ = {isa = PBXBuildFile; fileRef = E221560E2F68A3A800417A8A /* base.py */; };
+		E221570E2F68A3A800417A8A /* test_evaluator.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563B2F68A3A800417A8A /* test_evaluator.py */; };
+		E221570F2F68A3A800417A8A /* test_api.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156312F68A3A800417A8A /* test_api.py */; };
+		E22157102F68A3A800417A8A /* preprocessor.py in Resources */ = {isa = PBXBuildFile; fileRef = E221561C2F68A3A800417A8A /* preprocessor.py */; };
+		E22157112F68A3A800417A8A /* shoulder_mobility.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C12F68A3A800417A8A /* shoulder_mobility.py */; };
+		E22157122F68A3A800417A8A /* biomechanics.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155EE2F68A3A800417A8A /* biomechanics.py */; };
+		E22157132F68A3A800417A8A /* analyzer.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156082F68A3A800417A8A /* analyzer.py */; };
+		E22157142F68A3A800417A8A /* 2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564A2F68A3A800417A8A /* 2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22157152F68A3A800417A8A /* 4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221564D2F68A3A800417A8A /* 4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22157162F68A3A800417A8A /* CLEANUP.md in Resources */ = {isa = PBXBuildFile; fileRef = E221566E2F68A3A800417A8A /* CLEANUP.md */; };
+		E22157172F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155E32F68A3A800417A8A /* __init__.py */; };
+		E22157182F68A3A800417A8A /* single_leg_balance.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155C22F68A3A800417A8A /* single_leg_balance.py */; };
+		E22157192F68A3A800417A8A /* key_frame_detector.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156192F68A3A800417A8A /* key_frame_detector.py */; };
+		E221571A2F68A3A800417A8A /* clam_shells.py in Resources */ = {isa = PBXBuildFile; fileRef = E221559E2F68A3A800417A8A /* clam_shells.py */; };
+		E221571B2F68A3A800417A8A /* 7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E221565D2F68A3A800417A8A /* 7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E221571C2F68A3A800417A8A /* single_leg_balance.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B42F68A3A800417A8A /* single_leg_balance.py */; };
+		E221571D2F68A3A800417A8A /* wall_sit.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155AA2F68A3A800417A8A /* wall_sit.py */; };
+		E221571E2F68A3A800417A8A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E22156362F68A3A800417A8A /* README.md */; };
+		E221571F2F68A3A800417A8A /* single_leg_landing.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155DB2F68A3A800417A8A /* single_leg_landing.py */; };
+		E22157202F68A3A800417A8A /* wall_sit.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155A12F68A3A800417A8A /* wall_sit.py */; };
+		E22157212F68A3A800417A8A /* plank.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155B82F68A3A800417A8A /* plank.py */; };
+		E22157222F68A3A800417A8A /* d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E22156672F68A3A800417A8A /* d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */; };
+		E22157232F68A3A800417A8A /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155F52F68A3A800417A8A /* server.py */; };
+		E22157242F68A3A800417A8A /* run_sport_test.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156302F68A3A800417A8A /* run_sport_test.py */; };
+		E22157252F68A3A800417A8A /* hip_flexor_stretch.py in Resources */ = {isa = PBXBuildFile; fileRef = E22155CD2F68A3A800417A8A /* hip_flexor_stretch.py */; };
+		E22157262F68A3A800417A8A /* test_integration.py in Resources */ = {isa = PBXBuildFile; fileRef = E221563E2F68A3A800417A8A /* test_integration.py */; };
+		E22157272F68A3A800417A8A /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156182F68A3A800417A8A /* __init__.py */; };
+		E22157282F68A3A800417A8A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E22156282F68A3A800417A8A /* index.html */; };
+		E22157292F68A3A800417A8A /* batch_processor.py in Resources */ = {isa = PBXBuildFile; fileRef = E22156132F68A3A800417A8A /* batch_processor.py */; };
+		E221572A2F68A3A800417A8A /* requirements.txt in Resources */ = {isa = PBXBuildFile; fileRef = E22156742F68A3A800417A8A /* requirements.txt */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		E221559B2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E221559C2F68A3A800417A8A /* band_pull_apart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = band_pull_apart.py; sourceTree = "<group>"; };
+		E221559D2F68A3A800417A8A /* calf_raises.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = calf_raises.py; sourceTree = "<group>"; };
+		E221559E2F68A3A800417A8A /* clam_shells.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = clam_shells.py; sourceTree = "<group>"; };
+		E221559F2F68A3A800417A8A /* hip_bridge.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_bridge.py; sourceTree = "<group>"; };
+		E22155A02F68A3A800417A8A /* plank.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = plank.py; sourceTree = "<group>"; };
+		E22155A12F68A3A800417A8A /* wall_sit.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wall_sit.py; sourceTree = "<group>"; };
+		E22155A32F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155A42F68A3A800417A8A /* core_rotation.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = core_rotation.py; sourceTree = "<group>"; };
+		E22155A52F68A3A800417A8A /* rotator_cuff.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = rotator_cuff.py; sourceTree = "<group>"; };
+		E22155A72F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155A82F68A3A800417A8A /* single_leg_stance.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = single_leg_stance.py; sourceTree = "<group>"; };
+		E22155A92F68A3A800417A8A /* squat_jump.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = squat_jump.py; sourceTree = "<group>"; };
+		E22155AA2F68A3A800417A8A /* wall_sit.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wall_sit.py; sourceTree = "<group>"; };
+		E22155AC2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155AD2F68A3A800417A8A /* band_pull_apart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = band_pull_apart.py; sourceTree = "<group>"; };
+		E22155AE2F68A3A800417A8A /* push_ups.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = push_ups.py; sourceTree = "<group>"; };
+		E22155AF2F68A3A800417A8A /* torso_twist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = torso_twist.py; sourceTree = "<group>"; };
+		E22155B12F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155B22F68A3A800417A8A /* clam_shells.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = clam_shells.py; sourceTree = "<group>"; };
+		E22155B32F68A3A800417A8A /* hip_flexor_stretch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_flexor_stretch.py; sourceTree = "<group>"; };
+		E22155B42F68A3A800417A8A /* single_leg_balance.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = single_leg_balance.py; sourceTree = "<group>"; };
+		E22155B62F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155B72F68A3A800417A8A /* glute_bridge.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = glute_bridge.py; sourceTree = "<group>"; };
+		E22155B82F68A3A800417A8A /* plank.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = plank.py; sourceTree = "<group>"; };
+		E22155B92F68A3A800417A8A /* squats.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = squats.py; sourceTree = "<group>"; };
+		E22155BB2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155BC2F68A3A800417A8A /* hip_rotation_drill.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_rotation_drill.py; sourceTree = "<group>"; };
+		E22155BD2F68A3A800417A8A /* seated_torso_twist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = seated_torso_twist.py; sourceTree = "<group>"; };
+		E22155BF2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155C02F68A3A800417A8A /* hollow_hold.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hollow_hold.py; sourceTree = "<group>"; };
+		E22155C12F68A3A800417A8A /* shoulder_mobility.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = shoulder_mobility.py; sourceTree = "<group>"; };
+		E22155C22F68A3A800417A8A /* single_leg_balance.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = single_leg_balance.py; sourceTree = "<group>"; };
+		E22155C42F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155C62F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155C72F68A3A800417A8A /* band_pull_apart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = band_pull_apart.py; sourceTree = "<group>"; };
+		E22155C82F68A3A800417A8A /* hip_flexor_stretch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_flexor_stretch.py; sourceTree = "<group>"; };
+		E22155CA2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155CB2F68A3A800417A8A /* calf_raises.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = calf_raises.py; sourceTree = "<group>"; };
+		E22155CC2F68A3A800417A8A /* glute_bridges.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = glute_bridges.py; sourceTree = "<group>"; };
+		E22155CD2F68A3A800417A8A /* hip_flexor_stretch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_flexor_stretch.py; sourceTree = "<group>"; };
+		E22155CF2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155D12F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155D22F68A3A800417A8A /* band_pull_apart.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = band_pull_apart.py; sourceTree = "<group>"; };
+		E22155D32F68A3A800417A8A /* rotator_cuff_exercises.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = rotator_cuff_exercises.py; sourceTree = "<group>"; };
+		E22155D42F68A3A800417A8A /* seated_torso_twist.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = seated_torso_twist.py; sourceTree = "<group>"; };
+		E22155D62F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155D72F68A3A800417A8A /* plank.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = plank.py; sourceTree = "<group>"; };
+		E22155D82F68A3A800417A8A /* squats.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = squats.py; sourceTree = "<group>"; };
+		E22155DA2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155DB2F68A3A800417A8A /* single_leg_landing.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = single_leg_landing.py; sourceTree = "<group>"; };
+		E22155DC2F68A3A800417A8A /* squat_jump.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = squat_jump.py; sourceTree = "<group>"; };
+		E22155DE2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155DF2F68A3A800417A8A /* hip_bridge.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hip_bridge.py; sourceTree = "<group>"; };
+		E22155E02F68A3A800417A8A /* plank.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = plank.py; sourceTree = "<group>"; };
+		E22155E12F68A3A800417A8A /* wall_sit.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = wall_sit.py; sourceTree = "<group>"; };
+		E22155E32F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155E42F68A3A800417A8A /* cat_cow.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = cat_cow.py; sourceTree = "<group>"; };
+		E22155E52F68A3A800417A8A /* downward_dog.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = downward_dog.py; sourceTree = "<group>"; };
+		E22155E62F68A3A800417A8A /* tree_pose.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = tree_pose.py; sourceTree = "<group>"; };
+		E22155E82F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155EA2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155EB2F68A3A800417A8A /* EXERCISES_INDEX.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = EXERCISES_INDEX.md; sourceTree = "<group>"; };
+		E22155ED2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155EE2F68A3A800417A8A /* biomechanics.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = biomechanics.py; sourceTree = "<group>"; };
+		E22155EF2F68A3A800417A8A /* evaluator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = evaluator.py; sourceTree = "<group>"; };
+		E22155F02F68A3A800417A8A /* features.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = features.py; sourceTree = "<group>"; };
+		E22155F12F68A3A800417A8A /* sport_profiles.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sport_profiles.py; sourceTree = "<group>"; };
+		E22155F32F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155F42F68A3A800417A8A /* schemas.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = schemas.py; sourceTree = "<group>"; };
+		E22155F52F68A3A800417A8A /* server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
+		E22155F72F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155F82F68A3A800417A8A /* hybrid_pose.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = hybrid_pose.py; sourceTree = "<group>"; };
+		E22155F92F68A3A800417A8A /* movement_recognizer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = movement_recognizer.py; sourceTree = "<group>"; };
+		E22155FA2F68A3A800417A8A /* object_tracker.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = object_tracker.py; sourceTree = "<group>"; };
+		E22155FB2F68A3A800417A8A /* pose_estimator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pose_estimator.py; sourceTree = "<group>"; };
+		E22155FC2F68A3A800417A8A /* sport_inferencer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sport_inferencer.py; sourceTree = "<group>"; };
+		E22155FE2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22155FF2F68A3A800417A8A /* exporters.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = exporters.py; sourceTree = "<group>"; };
+		E22156012F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156022F68A3A800417A8A /* analyzer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = analyzer.py; sourceTree = "<group>"; };
+		E22156042F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156052F68A3A800417A8A /* analyzer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = analyzer.py; sourceTree = "<group>"; };
+		E22156072F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156082F68A3A800417A8A /* analyzer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = analyzer.py; sourceTree = "<group>"; };
+		E221560A2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E221560B2F68A3A800417A8A /* analyzer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = analyzer.py; sourceTree = "<group>"; };
+		E221560D2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E221560E2F68A3A800417A8A /* base.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = base.py; sourceTree = "<group>"; };
+		E221560F2F68A3A800417A8A /* registry.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = registry.py; sourceTree = "<group>"; };
+		E22156102F68A3A800417A8A /* schema.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = schema.py; sourceTree = "<group>"; };
+		E22156122F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156132F68A3A800417A8A /* batch_processor.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = batch_processor.py; sourceTree = "<group>"; };
+		E22156142F68A3A800417A8A /* data_store.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = data_store.py; sourceTree = "<group>"; };
+		E22156152F68A3A800417A8A /* improvement.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = improvement.py; sourceTree = "<group>"; };
+		E22156162F68A3A800417A8A /* report.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = report.py; sourceTree = "<group>"; };
+		E22156182F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156192F68A3A800417A8A /* key_frame_detector.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = key_frame_detector.py; sourceTree = "<group>"; };
+		E221561A2F68A3A800417A8A /* landmark_smoother.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = landmark_smoother.py; sourceTree = "<group>"; };
+		E221561B2F68A3A800417A8A /* overlay.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = overlay.py; sourceTree = "<group>"; };
+		E221561C2F68A3A800417A8A /* preprocessor.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = preprocessor.py; sourceTree = "<group>"; };
+		E221561D2F68A3A800417A8A /* processor.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = processor.py; sourceTree = "<group>"; };
+		E221561F2F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156202F68A3A800417A8A /* config.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = config.py; sourceTree = "<group>"; };
+		E22156212F68A3A800417A8A /* exceptions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = exceptions.py; sourceTree = "<group>"; };
+		E22156222F68A3A800417A8A /* pipeline.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pipeline.py; sourceTree = "<group>"; };
+		E22156232F68A3A800417A8A /* sources.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sources.py; sourceTree = "<group>"; };
+		E22156242F68A3A800417A8A /* sport_registry.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = sport_registry.py; sourceTree = "<group>"; };
+		E22156252F68A3A800417A8A /* utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		E22156272F68A3A800417A8A /* app.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = app.js; sourceTree = "<group>"; };
+		E22156282F68A3A800417A8A /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		E22156292F68A3A800417A8A /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		E221562B2F68A3A800417A8A /* pose_landmarker_lite.task */ = {isa = PBXFileReference; lastKnownFileType = file; path = pose_landmarker_lite.task; sourceTree = "<group>"; };
+		E221562F2F68A3A800417A8A /* run_example.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = run_example.py; sourceTree = "<group>"; };
+		E22156302F68A3A800417A8A /* run_sport_test.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = run_sport_test.py; sourceTree = "<group>"; };
+		E22156312F68A3A800417A8A /* test_api.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_api.py; sourceTree = "<group>"; };
+		E22156322F68A3A800417A8A /* train_sport_module.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = train_sport_module.py; sourceTree = "<group>"; };
+		E22156362F68A3A800417A8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E22156382F68A3A800417A8A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		E22156392F68A3A800417A8A /* conftest.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = conftest.py; sourceTree = "<group>"; };
+		E221563A2F68A3A800417A8A /* test_api.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_api.py; sourceTree = "<group>"; };
+		E221563B2F68A3A800417A8A /* test_evaluator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_evaluator.py; sourceTree = "<group>"; };
+		E221563C2F68A3A800417A8A /* test_exceptions.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_exceptions.py; sourceTree = "<group>"; };
+		E221563D2F68A3A800417A8A /* test_exporters.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_exporters.py; sourceTree = "<group>"; };
+		E221563E2F68A3A800417A8A /* test_integration.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_integration.py; sourceTree = "<group>"; };
+		E221563F2F68A3A800417A8A /* test_movement_recognizer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_movement_recognizer.py; sourceTree = "<group>"; };
+		E22156402F68A3A800417A8A /* test_object_tracker.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_object_tracker.py; sourceTree = "<group>"; };
+		E22156412F68A3A800417A8A /* test_overlay.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_overlay.py; sourceTree = "<group>"; };
+		E22156422F68A3A800417A8A /* test_pipeline.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_pipeline.py; sourceTree = "<group>"; };
+		E22156432F68A3A800417A8A /* test_pose_estimator.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_pose_estimator.py; sourceTree = "<group>"; };
+		E22156442F68A3A800417A8A /* test_sport_inferencer.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_sport_inferencer.py; sourceTree = "<group>"; };
+		E22156452F68A3A800417A8A /* test_sport_integration.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_sport_integration.py; sourceTree = "<group>"; };
+		E22156462F68A3A800417A8A /* test_utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_utils.py; sourceTree = "<group>"; };
+		E22156482F68A3A800417A8A /* 0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156492F68A3A800417A8A /* 01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221564A2F68A3A800417A8A /* 2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221564B2F68A3A800417A8A /* 3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4"; sourceTree = "<group>"; };
+		E221564C2F68A3A800417A8A /* 4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221564D2F68A3A800417A8A /* 4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221564E2F68A3A800417A8A /* 04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221564F2F68A3A800417A8A /* 5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156502F68A3A800417A8A /* 6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156512F68A3A800417A8A /* 8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156522F68A3A800417A8A /* 25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156532F68A3A800417A8A /* 67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156542F68A3A800417A8A /* 78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156552F68A3A800417A8A /* 91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156562F68A3A800417A8A /* 99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156572F68A3A800417A8A /* 199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156582F68A3A800417A8A /* 486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156592F68A3A800417A8A /* 742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221565A2F68A3A800417A8A /* 2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221565B2F68A3A800417A8A /* 745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4"; sourceTree = "<group>"; };
+		E221565C2F68A3A800417A8A /* 4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4"; sourceTree = "<group>"; };
+		E221565D2F68A3A800417A8A /* 7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221565E2F68A3A800417A8A /* 4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E221565F2F68A3A800417A8A /* a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156602F68A3A800417A8A /* a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156612F68A3A800417A8A /* b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156622F68A3A800417A8A /* b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156632F68A3A800417A8A /* bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156642F68A3A800417A8A /* bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4"; sourceTree = "<group>"; };
+		E22156652F68A3A800417A8A /* c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156662F68A3A800417A8A /* d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156672F68A3A800417A8A /* d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156682F68A3A800417A8A /* e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4"; sourceTree = "<group>"; };
+		E22156692F68A3A800417A8A /* edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4"; sourceTree = "<group>"; };
+		E221566B2F68A3A800417A8A /* app.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = app.py; sourceTree = "<group>"; };
+		E221566C2F68A3A800417A8A /* ARCHITECTURE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ARCHITECTURE.md; sourceTree = "<group>"; };
+		E221566D2F68A3A800417A8A /* AUDIT_REPORT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AUDIT_REPORT.md; sourceTree = "<group>"; };
+		E221566E2F68A3A800417A8A /* CLEANUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLEANUP.md; sourceTree = "<group>"; };
+		E221566F2F68A3A800417A8A /* download_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = download_model.py; sourceTree = "<group>"; };
+		E22156702F68A3A800417A8A /* main.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = main.py; sourceTree = "<group>"; };
+		E22156712F68A3A800417A8A /* pytest.ini */ = {isa = PBXFileReference; lastKnownFileType = text; path = pytest.ini; sourceTree = "<group>"; };
+		E22156722F68A3A800417A8A /* PYTHON_CLEANUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PYTHON_CLEANUP.md; sourceTree = "<group>"; };
+		E22156732F68A3A800417A8A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E22156742F68A3A800417A8A /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = requirements.txt; sourceTree = "<group>"; };
+		E22156752F68A3A800417A8A /* yolov8n.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n.pt; sourceTree = "<group>"; };
+		E22156762F68A3A800417A8A /* yolov8s.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8s.pt; sourceTree = "<group>"; };
 		E2F1BE262F5C13E2000F7226 /* sporthack2030.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sporthack2030.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E22155982F68A22D00417A8A /* PythonServer */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PythonServer;
-			sourceTree = "<group>";
-		};
 		E2F1BE282F5C13E2000F7226 /* sporthack2030 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = sporthack2030;
@@ -34,10 +390,524 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22155A22F68A3A800417A8A /* generic */ = {
+			isa = PBXGroup;
+			children = (
+				E221559B2F68A3A800417A8A /* __init__.py */,
+				E221559C2F68A3A800417A8A /* band_pull_apart.py */,
+				E221559D2F68A3A800417A8A /* calf_raises.py */,
+				E221559E2F68A3A800417A8A /* clam_shells.py */,
+				E221559F2F68A3A800417A8A /* hip_bridge.py */,
+				E22155A02F68A3A800417A8A /* plank.py */,
+				E22155A12F68A3A800417A8A /* wall_sit.py */,
+			);
+			path = generic;
+			sourceTree = "<group>";
+		};
+		E22155A62F68A3A800417A8A /* baseball */ = {
+			isa = PBXGroup;
+			children = (
+				E22155A32F68A3A800417A8A /* __init__.py */,
+				E22155A42F68A3A800417A8A /* core_rotation.py */,
+				E22155A52F68A3A800417A8A /* rotator_cuff.py */,
+			);
+			path = baseball;
+			sourceTree = "<group>";
+		};
+		E22155AB2F68A3A800417A8A /* basketball */ = {
+			isa = PBXGroup;
+			children = (
+				E22155A72F68A3A800417A8A /* __init__.py */,
+				E22155A82F68A3A800417A8A /* single_leg_stance.py */,
+				E22155A92F68A3A800417A8A /* squat_jump.py */,
+				E22155AA2F68A3A800417A8A /* wall_sit.py */,
+			);
+			path = basketball;
+			sourceTree = "<group>";
+		};
+		E22155B02F68A3A800417A8A /* boxing */ = {
+			isa = PBXGroup;
+			children = (
+				E22155AC2F68A3A800417A8A /* __init__.py */,
+				E22155AD2F68A3A800417A8A /* band_pull_apart.py */,
+				E22155AE2F68A3A800417A8A /* push_ups.py */,
+				E22155AF2F68A3A800417A8A /* torso_twist.py */,
+			);
+			path = boxing;
+			sourceTree = "<group>";
+		};
+		E22155B52F68A3A800417A8A /* football */ = {
+			isa = PBXGroup;
+			children = (
+				E22155B12F68A3A800417A8A /* __init__.py */,
+				E22155B22F68A3A800417A8A /* clam_shells.py */,
+				E22155B32F68A3A800417A8A /* hip_flexor_stretch.py */,
+				E22155B42F68A3A800417A8A /* single_leg_balance.py */,
+			);
+			path = football;
+			sourceTree = "<group>";
+		};
+		E22155BA2F68A3A800417A8A /* general_fitness */ = {
+			isa = PBXGroup;
+			children = (
+				E22155B62F68A3A800417A8A /* __init__.py */,
+				E22155B72F68A3A800417A8A /* glute_bridge.py */,
+				E22155B82F68A3A800417A8A /* plank.py */,
+				E22155B92F68A3A800417A8A /* squats.py */,
+			);
+			path = general_fitness;
+			sourceTree = "<group>";
+		};
+		E22155BE2F68A3A800417A8A /* golf */ = {
+			isa = PBXGroup;
+			children = (
+				E22155BB2F68A3A800417A8A /* __init__.py */,
+				E22155BC2F68A3A800417A8A /* hip_rotation_drill.py */,
+				E22155BD2F68A3A800417A8A /* seated_torso_twist.py */,
+			);
+			path = golf;
+			sourceTree = "<group>";
+		};
+		E22155C32F68A3A800417A8A /* gymnastics */ = {
+			isa = PBXGroup;
+			children = (
+				E22155BF2F68A3A800417A8A /* __init__.py */,
+				E22155C02F68A3A800417A8A /* hollow_hold.py */,
+				E22155C12F68A3A800417A8A /* shoulder_mobility.py */,
+				E22155C22F68A3A800417A8A /* single_leg_balance.py */,
+			);
+			path = gymnastics;
+			sourceTree = "<group>";
+		};
+		E22155C52F68A3A800417A8A /* hockey */ = {
+			isa = PBXGroup;
+			children = (
+				E22155C42F68A3A800417A8A /* __init__.py */,
+			);
+			path = hockey;
+			sourceTree = "<group>";
+		};
+		E22155C92F68A3A800417A8A /* martial_arts */ = {
+			isa = PBXGroup;
+			children = (
+				E22155C62F68A3A800417A8A /* __init__.py */,
+				E22155C72F68A3A800417A8A /* band_pull_apart.py */,
+				E22155C82F68A3A800417A8A /* hip_flexor_stretch.py */,
+			);
+			path = martial_arts;
+			sourceTree = "<group>";
+		};
+		E22155CE2F68A3A800417A8A /* running */ = {
+			isa = PBXGroup;
+			children = (
+				E22155CA2F68A3A800417A8A /* __init__.py */,
+				E22155CB2F68A3A800417A8A /* calf_raises.py */,
+				E22155CC2F68A3A800417A8A /* glute_bridges.py */,
+				E22155CD2F68A3A800417A8A /* hip_flexor_stretch.py */,
+			);
+			path = running;
+			sourceTree = "<group>";
+		};
+		E22155D02F68A3A800417A8A /* swimming */ = {
+			isa = PBXGroup;
+			children = (
+				E22155CF2F68A3A800417A8A /* __init__.py */,
+			);
+			path = swimming;
+			sourceTree = "<group>";
+		};
+		E22155D52F68A3A800417A8A /* tennis */ = {
+			isa = PBXGroup;
+			children = (
+				E22155D12F68A3A800417A8A /* __init__.py */,
+				E22155D22F68A3A800417A8A /* band_pull_apart.py */,
+				E22155D32F68A3A800417A8A /* rotator_cuff_exercises.py */,
+				E22155D42F68A3A800417A8A /* seated_torso_twist.py */,
+			);
+			path = tennis;
+			sourceTree = "<group>";
+		};
+		E22155D92F68A3A800417A8A /* unknown */ = {
+			isa = PBXGroup;
+			children = (
+				E22155D62F68A3A800417A8A /* __init__.py */,
+				E22155D72F68A3A800417A8A /* plank.py */,
+				E22155D82F68A3A800417A8A /* squats.py */,
+			);
+			path = unknown;
+			sourceTree = "<group>";
+		};
+		E22155DD2F68A3A800417A8A /* volleyball */ = {
+			isa = PBXGroup;
+			children = (
+				E22155DA2F68A3A800417A8A /* __init__.py */,
+				E22155DB2F68A3A800417A8A /* single_leg_landing.py */,
+				E22155DC2F68A3A800417A8A /* squat_jump.py */,
+			);
+			path = volleyball;
+			sourceTree = "<group>";
+		};
+		E22155E22F68A3A800417A8A /* weightlifting */ = {
+			isa = PBXGroup;
+			children = (
+				E22155DE2F68A3A800417A8A /* __init__.py */,
+				E22155DF2F68A3A800417A8A /* hip_bridge.py */,
+				E22155E02F68A3A800417A8A /* plank.py */,
+				E22155E12F68A3A800417A8A /* wall_sit.py */,
+			);
+			path = weightlifting;
+			sourceTree = "<group>";
+		};
+		E22155E72F68A3A800417A8A /* yoga */ = {
+			isa = PBXGroup;
+			children = (
+				E22155E32F68A3A800417A8A /* __init__.py */,
+				E22155E42F68A3A800417A8A /* cat_cow.py */,
+				E22155E52F68A3A800417A8A /* downward_dog.py */,
+				E22155E62F68A3A800417A8A /* tree_pose.py */,
+			);
+			path = yoga;
+			sourceTree = "<group>";
+		};
+		E22155E92F68A3A800417A8A /* sports */ = {
+			isa = PBXGroup;
+			children = (
+				E22155A62F68A3A800417A8A /* baseball */,
+				E22155AB2F68A3A800417A8A /* basketball */,
+				E22155B02F68A3A800417A8A /* boxing */,
+				E22155B52F68A3A800417A8A /* football */,
+				E22155BA2F68A3A800417A8A /* general_fitness */,
+				E22155BE2F68A3A800417A8A /* golf */,
+				E22155C32F68A3A800417A8A /* gymnastics */,
+				E22155C52F68A3A800417A8A /* hockey */,
+				E22155C92F68A3A800417A8A /* martial_arts */,
+				E22155CE2F68A3A800417A8A /* running */,
+				E22155D02F68A3A800417A8A /* swimming */,
+				E22155D52F68A3A800417A8A /* tennis */,
+				E22155D92F68A3A800417A8A /* unknown */,
+				E22155DD2F68A3A800417A8A /* volleyball */,
+				E22155E22F68A3A800417A8A /* weightlifting */,
+				E22155E72F68A3A800417A8A /* yoga */,
+				E22155E82F68A3A800417A8A /* __init__.py */,
+			);
+			path = sports;
+			sourceTree = "<group>";
+		};
+		E22155EC2F68A3A800417A8A /* exercises */ = {
+			isa = PBXGroup;
+			children = (
+				E22155A22F68A3A800417A8A /* generic */,
+				E22155E92F68A3A800417A8A /* sports */,
+				E22155EA2F68A3A800417A8A /* __init__.py */,
+				E22155EB2F68A3A800417A8A /* EXERCISES_INDEX.md */,
+			);
+			path = exercises;
+			sourceTree = "<group>";
+		};
+		E22155F22F68A3A800417A8A /* analysis */ = {
+			isa = PBXGroup;
+			children = (
+				E22155EC2F68A3A800417A8A /* exercises */,
+				E22155ED2F68A3A800417A8A /* __init__.py */,
+				E22155EE2F68A3A800417A8A /* biomechanics.py */,
+				E22155EF2F68A3A800417A8A /* evaluator.py */,
+				E22155F02F68A3A800417A8A /* features.py */,
+				E22155F12F68A3A800417A8A /* sport_profiles.py */,
+			);
+			path = analysis;
+			sourceTree = "<group>";
+		};
+		E22155F62F68A3A800417A8A /* api */ = {
+			isa = PBXGroup;
+			children = (
+				E22155F32F68A3A800417A8A /* __init__.py */,
+				E22155F42F68A3A800417A8A /* schemas.py */,
+				E22155F52F68A3A800417A8A /* server.py */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		E22155FD2F68A3A800417A8A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E22155F72F68A3A800417A8A /* __init__.py */,
+				E22155F82F68A3A800417A8A /* hybrid_pose.py */,
+				E22155F92F68A3A800417A8A /* movement_recognizer.py */,
+				E22155FA2F68A3A800417A8A /* object_tracker.py */,
+				E22155FB2F68A3A800417A8A /* pose_estimator.py */,
+				E22155FC2F68A3A800417A8A /* sport_inferencer.py */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E22156002F68A3A800417A8A /* reports */ = {
+			isa = PBXGroup;
+			children = (
+				E22155FE2F68A3A800417A8A /* __init__.py */,
+				E22155FF2F68A3A800417A8A /* exporters.py */,
+			);
+			path = reports;
+			sourceTree = "<group>";
+		};
+		E22156032F68A3A800417A8A /* basketball */ = {
+			isa = PBXGroup;
+			children = (
+				E22156012F68A3A800417A8A /* __init__.py */,
+				E22156022F68A3A800417A8A /* analyzer.py */,
+			);
+			path = basketball;
+			sourceTree = "<group>";
+		};
+		E22156062F68A3A800417A8A /* football */ = {
+			isa = PBXGroup;
+			children = (
+				E22156042F68A3A800417A8A /* __init__.py */,
+				E22156052F68A3A800417A8A /* analyzer.py */,
+			);
+			path = football;
+			sourceTree = "<group>";
+		};
+		E22156092F68A3A800417A8A /* tennis */ = {
+			isa = PBXGroup;
+			children = (
+				E22156072F68A3A800417A8A /* __init__.py */,
+				E22156082F68A3A800417A8A /* analyzer.py */,
+			);
+			path = tennis;
+			sourceTree = "<group>";
+		};
+		E221560C2F68A3A800417A8A /* weightlifting */ = {
+			isa = PBXGroup;
+			children = (
+				E221560A2F68A3A800417A8A /* __init__.py */,
+				E221560B2F68A3A800417A8A /* analyzer.py */,
+			);
+			path = weightlifting;
+			sourceTree = "<group>";
+		};
+		E22156112F68A3A800417A8A /* sports */ = {
+			isa = PBXGroup;
+			children = (
+				E22156032F68A3A800417A8A /* basketball */,
+				E22156062F68A3A800417A8A /* football */,
+				E22156092F68A3A800417A8A /* tennis */,
+				E221560C2F68A3A800417A8A /* weightlifting */,
+				E221560D2F68A3A800417A8A /* __init__.py */,
+				E221560E2F68A3A800417A8A /* base.py */,
+				E221560F2F68A3A800417A8A /* registry.py */,
+				E22156102F68A3A800417A8A /* schema.py */,
+			);
+			path = sports;
+			sourceTree = "<group>";
+		};
+		E22156172F68A3A800417A8A /* training */ = {
+			isa = PBXGroup;
+			children = (
+				E22156122F68A3A800417A8A /* __init__.py */,
+				E22156132F68A3A800417A8A /* batch_processor.py */,
+				E22156142F68A3A800417A8A /* data_store.py */,
+				E22156152F68A3A800417A8A /* improvement.py */,
+				E22156162F68A3A800417A8A /* report.py */,
+			);
+			path = training;
+			sourceTree = "<group>";
+		};
+		E221561E2F68A3A800417A8A /* video */ = {
+			isa = PBXGroup;
+			children = (
+				E22156182F68A3A800417A8A /* __init__.py */,
+				E22156192F68A3A800417A8A /* key_frame_detector.py */,
+				E221561A2F68A3A800417A8A /* landmark_smoother.py */,
+				E221561B2F68A3A800417A8A /* overlay.py */,
+				E221561C2F68A3A800417A8A /* preprocessor.py */,
+				E221561D2F68A3A800417A8A /* processor.py */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		E22156262F68A3A800417A8A /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				E22155F22F68A3A800417A8A /* analysis */,
+				E22155F62F68A3A800417A8A /* api */,
+				E22155FD2F68A3A800417A8A /* models */,
+				E22156002F68A3A800417A8A /* reports */,
+				E22156112F68A3A800417A8A /* sports */,
+				E22156172F68A3A800417A8A /* training */,
+				E221561E2F68A3A800417A8A /* video */,
+				E221561F2F68A3A800417A8A /* __init__.py */,
+				E22156202F68A3A800417A8A /* config.py */,
+				E22156212F68A3A800417A8A /* exceptions.py */,
+				E22156222F68A3A800417A8A /* pipeline.py */,
+				E22156232F68A3A800417A8A /* sources.py */,
+				E22156242F68A3A800417A8A /* sport_registry.py */,
+				E22156252F68A3A800417A8A /* utils.py */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		E221562A2F68A3A800417A8A /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+				E22156272F68A3A800417A8A /* app.js */,
+				E22156282F68A3A800417A8A /* index.html */,
+				E22156292F68A3A800417A8A /* style.css */,
+			);
+			path = frontend;
+			sourceTree = "<group>";
+		};
+		E221562C2F68A3A800417A8A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E221562B2F68A3A800417A8A /* pose_landmarker_lite.task */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E221562D2F68A3A800417A8A /* output */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		E221562E2F68A3A800417A8A /* reports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reports;
+			sourceTree = "<group>";
+		};
+		E22156332F68A3A800417A8A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E221562F2F68A3A800417A8A /* run_example.py */,
+				E22156302F68A3A800417A8A /* run_sport_test.py */,
+				E22156312F68A3A800417A8A /* test_api.py */,
+				E22156322F68A3A800417A8A /* train_sport_module.py */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		E22156342F68A3A800417A8A /* reports */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reports;
+			sourceTree = "<group>";
+		};
+		E22156352F68A3A800417A8A /* Football */ = {
+			isa = PBXGroup;
+			children = (
+				E22156342F68A3A800417A8A /* reports */,
+			);
+			path = Football;
+			sourceTree = "<group>";
+		};
+		E22156372F68A3A800417A8A /* sports */ = {
+			isa = PBXGroup;
+			children = (
+				E22156352F68A3A800417A8A /* Football */,
+				E22156362F68A3A800417A8A /* README.md */,
+			);
+			path = sports;
+			sourceTree = "<group>";
+		};
+		E22156472F68A3A800417A8A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				E22156382F68A3A800417A8A /* __init__.py */,
+				E22156392F68A3A800417A8A /* conftest.py */,
+				E221563A2F68A3A800417A8A /* test_api.py */,
+				E221563B2F68A3A800417A8A /* test_evaluator.py */,
+				E221563C2F68A3A800417A8A /* test_exceptions.py */,
+				E221563D2F68A3A800417A8A /* test_exporters.py */,
+				E221563E2F68A3A800417A8A /* test_integration.py */,
+				E221563F2F68A3A800417A8A /* test_movement_recognizer.py */,
+				E22156402F68A3A800417A8A /* test_object_tracker.py */,
+				E22156412F68A3A800417A8A /* test_overlay.py */,
+				E22156422F68A3A800417A8A /* test_pipeline.py */,
+				E22156432F68A3A800417A8A /* test_pose_estimator.py */,
+				E22156442F68A3A800417A8A /* test_sport_inferencer.py */,
+				E22156452F68A3A800417A8A /* test_sport_integration.py */,
+				E22156462F68A3A800417A8A /* test_utils.py */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		E221566A2F68A3A800417A8A /* uploads */ = {
+			isa = PBXGroup;
+			children = (
+				E22156482F68A3A800417A8A /* 0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156492F68A3A800417A8A /* 01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221564A2F68A3A800417A8A /* 2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221564B2F68A3A800417A8A /* 3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */,
+				E221564C2F68A3A800417A8A /* 4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221564D2F68A3A800417A8A /* 4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221564E2F68A3A800417A8A /* 04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221564F2F68A3A800417A8A /* 5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156502F68A3A800417A8A /* 6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156512F68A3A800417A8A /* 8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156522F68A3A800417A8A /* 25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156532F68A3A800417A8A /* 67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156542F68A3A800417A8A /* 78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156552F68A3A800417A8A /* 91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156562F68A3A800417A8A /* 99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156572F68A3A800417A8A /* 199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156582F68A3A800417A8A /* 486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156592F68A3A800417A8A /* 742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221565A2F68A3A800417A8A /* 2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221565B2F68A3A800417A8A /* 745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */,
+				E221565C2F68A3A800417A8A /* 4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */,
+				E221565D2F68A3A800417A8A /* 7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221565E2F68A3A800417A8A /* 4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E221565F2F68A3A800417A8A /* a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156602F68A3A800417A8A /* a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156612F68A3A800417A8A /* b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156622F68A3A800417A8A /* b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156632F68A3A800417A8A /* bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156642F68A3A800417A8A /* bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 */,
+				E22156652F68A3A800417A8A /* c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156662F68A3A800417A8A /* d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156672F68A3A800417A8A /* d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156682F68A3A800417A8A /* e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 */,
+				E22156692F68A3A800417A8A /* edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 */,
+			);
+			path = uploads;
+			sourceTree = "<group>";
+		};
+		E22156772F68A3A800417A8A /* Sport */ = {
+			isa = PBXGroup;
+			children = (
+				E22156262F68A3A800417A8A /* backend */,
+				E221562A2F68A3A800417A8A /* frontend */,
+				E221562C2F68A3A800417A8A /* models */,
+				E221562D2F68A3A800417A8A /* output */,
+				E221562E2F68A3A800417A8A /* reports */,
+				E22156332F68A3A800417A8A /* scripts */,
+				E22156372F68A3A800417A8A /* sports */,
+				E22156472F68A3A800417A8A /* tests */,
+				E221566A2F68A3A800417A8A /* uploads */,
+				E221566B2F68A3A800417A8A /* app.py */,
+				E221566C2F68A3A800417A8A /* ARCHITECTURE.md */,
+				E221566D2F68A3A800417A8A /* AUDIT_REPORT.md */,
+				E221566E2F68A3A800417A8A /* CLEANUP.md */,
+				E221566F2F68A3A800417A8A /* download_model.py */,
+				E22156702F68A3A800417A8A /* main.py */,
+				E22156712F68A3A800417A8A /* pytest.ini */,
+				E22156722F68A3A800417A8A /* PYTHON_CLEANUP.md */,
+				E22156732F68A3A800417A8A /* README.md */,
+				E22156742F68A3A800417A8A /* requirements.txt */,
+				E22156752F68A3A800417A8A /* yolov8n.pt */,
+				E22156762F68A3A800417A8A /* yolov8s.pt */,
+			);
+			path = Sport;
+			sourceTree = "<group>";
+		};
 		E2F1BE1D2F5C13E2000F7226 = {
 			isa = PBXGroup;
 			children = (
-				E22155982F68A22D00417A8A /* PythonServer */,
+				E22156772F68A3A800417A8A /* Sport */,
 				E2F1BE282F5C13E2000F7226 /* sporthack2030 */,
 				E2F1BE272F5C13E2000F7226 /* Products */,
 			);
@@ -67,7 +937,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E22155982F68A22D00417A8A /* PythonServer */,
 				E2F1BE282F5C13E2000F7226 /* sporthack2030 */,
 			);
 			name = sporthack2030;
@@ -116,6 +985,185 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22156782F68A3A800417A8A /* train_sport_module.py in Resources */,
+				E22156792F68A3A800417A8A /* rotator_cuff_exercises.py in Resources */,
+				E221567A2F68A3A800417A8A /* __init__.py in Resources */,
+				E221567B2F68A3A800417A8A /* 4270137d8e3047f891279a26b3b46216_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */,
+				E221567C2F68A3A800417A8A /* e9b44433481c45c98081f273f6c5affc_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E221567D2F68A3A800417A8A /* __init__.py in Resources */,
+				E221567E2F68A3A800417A8A /* utils.py in Resources */,
+				E221567F2F68A3A800417A8A /* test_pose_estimator.py in Resources */,
+				E22156802F68A3A800417A8A /* test_object_tracker.py in Resources */,
+				E22156812F68A3A800417A8A /* __init__.py in Resources */,
+				E22156822F68A3A800417A8A /* sport_profiles.py in Resources */,
+				E22156832F68A3A800417A8A /* __init__.py in Resources */,
+				E22156842F68A3A800417A8A /* schema.py in Resources */,
+				E22156852F68A3A800417A8A /* PYTHON_CLEANUP.md in Resources */,
+				E22156862F68A3A800417A8A /* __init__.py in Resources */,
+				E22156872F68A3A800417A8A /* pose_estimator.py in Resources */,
+				E22156882F68A3A800417A8A /* plank.py in Resources */,
+				E22156892F68A3A800417A8A /* torso_twist.py in Resources */,
+				E221568A2F68A3A800417A8A /* main.py in Resources */,
+				E221568B2F68A3A800417A8A /* 25cbc5844dc44d11b5d145b47009eb10_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E221568C2F68A3A800417A8A /* b55310295d2d43cfb4685551b08165fb_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E221568D2F68A3A800417A8A /* processor.py in Resources */,
+				E221568E2F68A3A800417A8A /* wall_sit.py in Resources */,
+				E221568F2F68A3A800417A8A /* test_overlay.py in Resources */,
+				E22156902F68A3A800417A8A /* improvement.py in Resources */,
+				E22156912F68A3A800417A8A /* hip_bridge.py in Resources */,
+				E22156922F68A3A800417A8A /* squat_jump.py in Resources */,
+				E22156932F68A3A800417A8A /* hip_flexor_stretch.py in Resources */,
+				E22156942F68A3A800417A8A /* squats.py in Resources */,
+				E22156952F68A3A800417A8A /* d9a6fb4ba3d34dd7901065d7d7c3499e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156962F68A3A800417A8A /* band_pull_apart.py in Resources */,
+				E22156972F68A3A800417A8A /* hip_rotation_drill.py in Resources */,
+				E22156982F68A3A800417A8A /* evaluator.py in Resources */,
+				E22156992F68A3A800417A8A /* __init__.py in Resources */,
+				E221569A2F68A3A800417A8A /* hybrid_pose.py in Resources */,
+				E221569B2F68A3A800417A8A /* glute_bridge.py in Resources */,
+				E221569C2F68A3A800417A8A /* 4c735f2a716245309fba23856f8e571f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E221569D2F68A3A800417A8A /* download_model.py in Resources */,
+				E221569E2F68A3A800417A8A /* hip_bridge.py in Resources */,
+				E221569F2F68A3A800417A8A /* downward_dog.py in Resources */,
+				E22156A02F68A3A800417A8A /* 4937822359ce4dd1b3a289fa1ddf071b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156A12F68A3A800417A8A /* plank.py in Resources */,
+				E22156A22F68A3A800417A8A /* pose_landmarker_lite.task in Resources */,
+				E22156A32F68A3A800417A8A /* data_store.py in Resources */,
+				E22156A42F68A3A800417A8A /* __init__.py in Resources */,
+				E22156A52F68A3A800417A8A /* 99ff1aecff8d49f3b833daa86f541db7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156A62F68A3A800417A8A /* band_pull_apart.py in Resources */,
+				E22156A72F68A3A800417A8A /* bc06eb222d7540bc930101593ff70d64_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */,
+				E22156A82F68A3A800417A8A /* __init__.py in Resources */,
+				E22156A92F68A3A800417A8A /* conftest.py in Resources */,
+				E22156AA2F68A3A800417A8A /* glute_bridges.py in Resources */,
+				E22156AB2F68A3A800417A8A /* exceptions.py in Resources */,
+				E22156AC2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156AD2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156AE2F68A3A800417A8A /* sources.py in Resources */,
+				E22156AF2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156B02F68A3A800417A8A /* pytest.ini in Resources */,
+				E22156B12F68A3A800417A8A /* core_rotation.py in Resources */,
+				E22156B22F68A3A800417A8A /* rotator_cuff.py in Resources */,
+				E22156B32F68A3A800417A8A /* __init__.py in Resources */,
+				E22156B42F68A3A800417A8A /* b72af944f98242fb81ee349adf77110d_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156B52F68A3A800417A8A /* 3d4104d728ad4b57af55719c352c0df4_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 in Resources */,
+				E22156B62F68A3A800417A8A /* 67f79767e10840a4bb83b60419b7bc3b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156B72F68A3A800417A8A /* 01f32bb2fb434302994b6ec5002fa87b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156B82F68A3A800417A8A /* push_ups.py in Resources */,
+				E22156B92F68A3A800417A8A /* squat_jump.py in Resources */,
+				E22156BA2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156BB2F68A3A800417A8A /* clam_shells.py in Resources */,
+				E22156BC2F68A3A800417A8A /* report.py in Resources */,
+				E22156BD2F68A3A800417A8A /* bb43468d875b4590b979bb50d686fc09_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156BE2F68A3A800417A8A /* analyzer.py in Resources */,
+				E22156BF2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156C02F68A3A800417A8A /* 8f533b50d87e4e1cad424fc08b44f865_جار تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156C12F68A3A800417A8A /* object_tracker.py in Resources */,
+				E22156C22F68A3A800417A8A /* 2873d9ef99ff464d90b020638450bb8b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156C32F68A3A800417A8A /* test_sport_inferencer.py in Resources */,
+				E22156C42F68A3A800417A8A /* 91dee683240949bdaa00c8a2b587093b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156C52F68A3A800417A8A /* __init__.py in Resources */,
+				E22156C62F68A3A800417A8A /* yolov8n.pt in Resources */,
+				E22156C72F68A3A800417A8A /* __init__.py in Resources */,
+				E22156C82F68A3A800417A8A /* a88a425613454226a7a599594d1cfb4b_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156C92F68A3A800417A8A /* __init__.py in Resources */,
+				E22156CA2F68A3A800417A8A /* app.js in Resources */,
+				E22156CB2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156CC2F68A3A800417A8A /* 745536b58e01484ea82b9bdd151de3e4_جارٍ تسجيل الشاشة 2025-04-19 060211.mp4 in Resources */,
+				E22156CD2F68A3A800417A8A /* seated_torso_twist.py in Resources */,
+				E22156CE2F68A3A800417A8A /* 0ebc968e999b41aba5edd4ad250ac1f5_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156CF2F68A3A800417A8A /* 5f089b1b86d44bedaf401d0561152f7c_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156D02F68A3A800417A8A /* __init__.py in Resources */,
+				E22156D12F68A3A800417A8A /* config.py in Resources */,
+				E22156D22F68A3A800417A8A /* registry.py in Resources */,
+				E22156D32F68A3A800417A8A /* c25439752db24f9f87c12e7a1566dc5f_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156D42F68A3A800417A8A /* test_pipeline.py in Resources */,
+				E22156D52F68A3A800417A8A /* test_sport_integration.py in Resources */,
+				E22156D62F68A3A800417A8A /* exporters.py in Resources */,
+				E22156D72F68A3A800417A8A /* band_pull_apart.py in Resources */,
+				E22156D82F68A3A800417A8A /* __init__.py in Resources */,
+				E22156D92F68A3A800417A8A /* 04dd109e9ce1499989fd125d296b373e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156DA2F68A3A800417A8A /* README.md in Resources */,
+				E22156DB2F68A3A800417A8A /* squats.py in Resources */,
+				E22156DC2F68A3A800417A8A /* seated_torso_twist.py in Resources */,
+				E22156DD2F68A3A800417A8A /* yolov8s.pt in Resources */,
+				E22156DE2F68A3A800417A8A /* analyzer.py in Resources */,
+				E22156DF2F68A3A800417A8A /* overlay.py in Resources */,
+				E22156E02F68A3A800417A8A /* single_leg_stance.py in Resources */,
+				E22156E12F68A3A800417A8A /* __init__.py in Resources */,
+				E22156E22F68A3A800417A8A /* schemas.py in Resources */,
+				E22156E32F68A3A800417A8A /* __init__.py in Resources */,
+				E22156E42F68A3A800417A8A /* test_exceptions.py in Resources */,
+				E22156E52F68A3A800417A8A /* sport_registry.py in Resources */,
+				E22156E62F68A3A800417A8A /* test_api.py in Resources */,
+				E22156E72F68A3A800417A8A /* features.py in Resources */,
+				E22156E82F68A3A800417A8A /* __init__.py in Resources */,
+				E22156E92F68A3A800417A8A /* AUDIT_REPORT.md in Resources */,
+				E22156EA2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156EB2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156EC2F68A3A800417A8A /* 78fdf9201046444c84c69ece2dfb19b2_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156ED2F68A3A800417A8A /* 486fdcc9c1384017a05d8af271b35ec6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156EE2F68A3A800417A8A /* movement_recognizer.py in Resources */,
+				E22156EF2F68A3A800417A8A /* __init__.py in Resources */,
+				E22156F02F68A3A800417A8A /* app.py in Resources */,
+				E22156F12F68A3A800417A8A /* 742f67b6ba2f4b2494366565debf22a7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156F22F68A3A800417A8A /* tree_pose.py in Resources */,
+				E22156F32F68A3A800417A8A /* __init__.py in Resources */,
+				E22156F42F68A3A800417A8A /* sport_inferencer.py in Resources */,
+				E22156F52F68A3A800417A8A /* cat_cow.py in Resources */,
+				E22156F62F68A3A800417A8A /* plank.py in Resources */,
+				E22156F72F68A3A800417A8A /* analyzer.py in Resources */,
+				E22156F82F68A3A800417A8A /* calf_raises.py in Resources */,
+				E22156F92F68A3A800417A8A /* __init__.py in Resources */,
+				E22156FA2F68A3A800417A8A /* hollow_hold.py in Resources */,
+				E22156FB2F68A3A800417A8A /* test_exporters.py in Resources */,
+				E22156FC2F68A3A800417A8A /* 6b995661880d45239701f185224050a6_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156FD2F68A3A800417A8A /* 199d37813269492091076372b0866b03_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22156FE2F68A3A800417A8A /* edf259e8abe64a97a544c1bbbefc3795_جارٍ تسجيل الشاشة 2026-03-11 033007.mp4 in Resources */,
+				E22156FF2F68A3A800417A8A /* test_utils.py in Resources */,
+				E22157002F68A3A800417A8A /* EXERCISES_INDEX.md in Resources */,
+				E22157012F68A3A800417A8A /* run_example.py in Resources */,
+				E22157022F68A3A800417A8A /* ARCHITECTURE.md in Resources */,
+				E22157032F68A3A800417A8A /* __init__.py in Resources */,
+				E22157042F68A3A800417A8A /* test_movement_recognizer.py in Resources */,
+				E22157052F68A3A800417A8A /* calf_raises.py in Resources */,
+				E22157062F68A3A800417A8A /* __init__.py in Resources */,
+				E22157072F68A3A800417A8A /* a9f586ed8d7b43279325310da4e44101_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22157082F68A3A800417A8A /* hip_flexor_stretch.py in Resources */,
+				E22157092F68A3A800417A8A /* pipeline.py in Resources */,
+				E221570A2F68A3A800417A8A /* landmark_smoother.py in Resources */,
+				E221570B2F68A3A800417A8A /* style.css in Resources */,
+				E221570C2F68A3A800417A8A /* band_pull_apart.py in Resources */,
+				E221570D2F68A3A800417A8A /* base.py in Resources */,
+				E221570E2F68A3A800417A8A /* test_evaluator.py in Resources */,
+				E221570F2F68A3A800417A8A /* test_api.py in Resources */,
+				E22157102F68A3A800417A8A /* preprocessor.py in Resources */,
+				E22157112F68A3A800417A8A /* shoulder_mobility.py in Resources */,
+				E22157122F68A3A800417A8A /* biomechanics.py in Resources */,
+				E22157132F68A3A800417A8A /* analyzer.py in Resources */,
+				E22157142F68A3A800417A8A /* 2cd7b4c5691c4d30bb742956892ea6c0_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22157152F68A3A800417A8A /* 4db7b9b4de934676b38b7be88d529dc7_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22157162F68A3A800417A8A /* CLEANUP.md in Resources */,
+				E22157172F68A3A800417A8A /* __init__.py in Resources */,
+				E22157182F68A3A800417A8A /* single_leg_balance.py in Resources */,
+				E22157192F68A3A800417A8A /* key_frame_detector.py in Resources */,
+				E221571A2F68A3A800417A8A /* clam_shells.py in Resources */,
+				E221571B2F68A3A800417A8A /* 7635907a9fb549d6be8b2df49495225e_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E221571C2F68A3A800417A8A /* single_leg_balance.py in Resources */,
+				E221571D2F68A3A800417A8A /* wall_sit.py in Resources */,
+				E221571E2F68A3A800417A8A /* README.md in Resources */,
+				E221571F2F68A3A800417A8A /* single_leg_landing.py in Resources */,
+				E22157202F68A3A800417A8A /* wall_sit.py in Resources */,
+				E22157212F68A3A800417A8A /* plank.py in Resources */,
+				E22157222F68A3A800417A8A /* d13e04b408fc41fcaf1ce0fc41ac9580_جارٍ تسجيل الشاشة 2026-03-09 225058.mp4 in Resources */,
+				E22157232F68A3A800417A8A /* server.py in Resources */,
+				E22157242F68A3A800417A8A /* run_sport_test.py in Resources */,
+				E22157252F68A3A800417A8A /* hip_flexor_stretch.py in Resources */,
+				E22157262F68A3A800417A8A /* test_integration.py in Resources */,
+				E22157272F68A3A800417A8A /* __init__.py in Resources */,
+				E22157282F68A3A800417A8A /* index.html in Resources */,
+				E22157292F68A3A800417A8A /* batch_processor.py in Resources */,
+				E221572A2F68A3A800417A8A /* requirements.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
