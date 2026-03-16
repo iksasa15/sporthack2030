@@ -11,6 +11,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		E22155982F68A22D00417A8A /* PythonServer */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PythonServer;
+			sourceTree = "<group>";
+		};
 		E2F1BE282F5C13E2000F7226 /* sporthack2030 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = sporthack2030;
@@ -32,6 +37,7 @@
 		E2F1BE1D2F5C13E2000F7226 = {
 			isa = PBXGroup;
 			children = (
+				E22155982F68A22D00417A8A /* PythonServer */,
 				E2F1BE282F5C13E2000F7226 /* sporthack2030 */,
 				E2F1BE272F5C13E2000F7226 /* Products */,
 			);
@@ -61,6 +67,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				E22155982F68A22D00417A8A /* PythonServer */,
 				E2F1BE282F5C13E2000F7226 /* sporthack2030 */,
 			);
 			name = sporthack2030;
