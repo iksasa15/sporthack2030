@@ -57,27 +57,46 @@ struct ProfileView: View {
                         .stroke(AppTheme.cardBorder(for: colorScheme), lineWidth: 1)
                 )
 
-            Button {
-                backendHost = AppConnection.normalizedHost(hostInput)
-                hostInput = backendHost
-                Task { await testConnection() }
-            } label: {
-                HStack(spacing: 8) {
-                    if isTestingConnection {
-                        ProgressView()
-                            .tint(.white)
-                            .scaleEffect(0.9)
+            HStack(spacing: 10) {
+                Button {
+                    Task { await testConnection(host: AppConnection.normalizedHost(hostInput)) }
+                } label: {
+                    HStack(spacing: 6) {
+                        if isTestingConnection {
+                            ProgressView()
+                                .tint(AppTheme.primaryText(for: colorScheme))
+                                .scaleEffect(0.85)
+                        }
+                        Text(isTestingConnection ? "جاري التحقق..." : "اختبار")
+                            .font(.appFont(.medium, size: 14))
                     }
-                    Text(isTestingConnection ? "جاري التحقق..." : "حفظ عنوان الاتصال")
-                        .font(.appFont(.medium, size: 14))
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 10)
+                    .foregroundStyle(AppTheme.primaryText(for: colorScheme))
+                    .background(AppTheme.card(for: colorScheme))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12, style: .continuous)
+                            .stroke(AppTheme.cardBorder(for: colorScheme), lineWidth: 1)
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 10)
-                .foregroundStyle(.white)
-                .background(AppTheme.interactive(for: colorScheme))
-                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                .disabled(isTestingConnection)
+
+                Button {
+                    backendHost = AppConnection.normalizedHost(hostInput)
+                    hostInput = backendHost
+                    Task { await testConnection(host: backendHost) }
+                } label: {
+                    Text("حفظ")
+                        .font(.appFont(.medium, size: 14))
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 10)
+                        .foregroundStyle(.white)
+                        .background(AppTheme.interactive(for: colorScheme))
+                        .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                }
+                .disabled(isTestingConnection)
             }
-            .disabled(isTestingConnection)
 
             Text("الرابط الحالي: http://\(AppConnection.normalizedHost(backendHost))")
                 .font(.appFont(.regular, size: 12))
@@ -165,11 +184,12 @@ struct ProfileView: View {
     }
 
     @MainActor
-    private func testConnection() async {
+    private func testConnection(host: String? = nil) async {
         isTestingConnection = true
         defer { isTestingConnection = false }
 
-        let urlString = AppConnection.healthURLString(for: backendHost)
+        let hostToTest = host ?? backendHost
+        let urlString = AppConnection.healthURLString(for: hostToTest)
         guard let url = URL(string: urlString) else {
             connectionSucceeded = false
             connectionMessage = "فشل الاتصال: عنوان غير صالح."
