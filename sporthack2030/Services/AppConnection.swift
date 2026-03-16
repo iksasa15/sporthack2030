@@ -3,6 +3,8 @@ import Foundation
 enum AppConnection {
     static let hostKey = "backendHost"
     static let defaultHost = "127.0.0.1:5001"
+    /// اسم التمرين المعروض أعلى الكاميرا (يُعيَّن من التدريبات عند اختيار «تصوير الآن»).
+    static let cameraExerciseNameKey = "cameraExerciseName"
 
     static var host: String {
         normalizedHost(UserDefaults.standard.string(forKey: hostKey) ?? defaultHost)

@@ -7,6 +7,7 @@ import UIKit
 struct CameraView: View {
     @StateObject private var viewModel = VisionViewModel()
     @Environment(\.colorScheme) private var colorScheme
+    @AppStorage(AppConnection.cameraExerciseNameKey) private var cameraExerciseName = ""
 
     var body: some View {
         NavigationStack {
@@ -25,6 +26,16 @@ struct CameraView: View {
                 }
 
                 VStack {
+                    if !cameraExerciseName.isEmpty {
+                        Text(cameraExerciseName)
+                            .font(.appFont(.bold, size: 18))
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 10)
+                            .background(.black.opacity(0.5))
+                            .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                            .padding(.top, 12)
+                    }
                     HStack {
                         Button {
                             viewModel.toggleTorch()

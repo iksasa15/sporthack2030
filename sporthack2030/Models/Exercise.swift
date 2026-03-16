@@ -21,3 +21,80 @@ struct Exercise: Codable, Identifiable {
 struct ExercisesResponse: Codable {
     var exercises: [Exercise]
 }
+
+// MARK: - Arabic display
+extension Exercise {
+    /// Arabic name for common exercises (backend sends English).
+    var nameAr: String {
+        let map: [String: String] = [
+            "Clam shells": "صدفة المحار",
+            "Squat jump": "قفزة القرفصاء",
+            "Plank": "البلانك",
+            "Single-leg balance": "التوازن على قدم واحدة",
+            "Single-leg stance": "الوقوف على قدم واحدة",
+            "Wall sit": "الجلوس على الحائط",
+            "Hip flexor stretch": "تمدد ثني الورك",
+            "Hip bridge": "جسر الورك",
+            "Glute bridge": "جسر الألوية",
+            "Glute bridges": "جسور الألوية",
+            "Band pull-apart": "سحب الشريط",
+            "Push-ups": "الضغط",
+            "Torso twist": "لف الجذع",
+            "Seated torso twist": "لف الجذع جالساً",
+            "Rotator cuff exercises": "تمارين الكفة المدورة",
+            "Rotator cuff": "الكفة المدورة",
+            "Core rotation": "دوران الجذع",
+            "Hip rotation drill": "تدريب دوران الورك",
+            "Downward dog": "وضعية الكلب النازل",
+            "Tree pose": "وضعية الشجرة",
+            "Cat-cow": "القط-البقرة",
+            "Hollow hold": "التمسك الجوفاء",
+            "Shoulder mobility": "مرونة الكتف",
+            "Calf raises": "رفع ربلة الساق",
+            "Squats": "القرفصاء",
+            "Single-leg landing": "الهبوط على قدم واحدة",
+        ]
+        return map[name] ?? name
+    }
+
+    /// Arabic for target (body part).
+    var targetAr: String {
+        let map: [String: String] = [
+            "hip": "الورك",
+            "knee": "الركبة",
+            "core": "الجذع",
+            "ankle": "الكاحل",
+            "shoulder": "الكتف",
+            "balance": "التوازن",
+            "spine": "العمود الفقري",
+            "leg": "الساق",
+        ]
+        guard let t = target, !t.isEmpty else { return "" }
+        return map[t.lowercased()] ?? t
+    }
+
+    /// Arabic for sport.
+    var sportAr: String {
+        let map: [String: String] = [
+            "football": "كرة القدم",
+            "basketball": "كرة السلة",
+            "generic": "عام",
+            "tennis": "التنس",
+            "running": "الجري",
+            "yoga": "اليوغا",
+            "boxing": "الملاكمة",
+            "weightlifting": "رفع الأثقال",
+            "volleyball": "الكرة الطائرة",
+            "golf": "الجولف",
+            "baseball": "كرة القاعدة",
+            "gymnastics": "الجمباز",
+            "martial_arts": "الفنون القتالية",
+        ]
+        guard let s = sport, !s.isEmpty else { return "" }
+        return map[s.lowercased()] ?? s
+    }
+
+    var descriptionAr: String? {
+        description
+    }
+}
