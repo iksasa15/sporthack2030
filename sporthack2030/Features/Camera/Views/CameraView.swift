@@ -21,6 +21,13 @@ struct CameraView: View {
                 )
                     .ignoresSafeArea()
 
+                BodyPoseOverlayView(
+                    landmarks: viewModel.poseLandmarks,
+                    connections: viewModel.poseConnections,
+                    isFrontCamera: viewModel.isUsingFrontCamera
+                )
+                    .ignoresSafeArea()
+
                 if viewModel.authorizationDenied {
                     cameraDeniedView
                 }

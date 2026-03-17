@@ -138,6 +138,27 @@ struct VideoBodyPoseView: View {
         }
     }
 
+    /// Re-export video to H.264 so it plays in Photos when saved on device (server may send mp4v).
+    private func exportForPhotosIfNeeded(_ sourceURL: URL) async -> URL? {
+        let asset = AVURLAsset(url: sourceURL)
+        guard asset.isPlayable else { return nil }
+        let preset = AVAssetExportPresetHighestQuality
+        guard let session = AVAssetExportSession(asset: asset, presetName: preset) else { return nil }
+        let outURL = FileManager.default.temporaryDirectory
+            .appendingPathComponent("export_\(UUID().uuidString).mp4")
+        session.outputURL = outURL
+        session.outputFileType = .mp4
+        await withCheckedContinuation { (cont: CheckedContinuation<Void, Never>) in
+            session.exportAsynchronously {
+                cont.resume()
+            }
+        }
+        if session.status == .completed, (try? outURL.checkResourceIsReachable()) == true {
+            return outURL
+        }
+        return nil
+    }
+
     @MainActor
     private func saveAnalyzedVideo() async {
         guard let url = resultVideoURL else { return }
@@ -167,8 +188,10 @@ struct VideoBodyPoseView: View {
                 try data.write(to: temp)
                 localURL = temp
             }
+            // Re-export to H.264 so it plays in Photos app when saved on device
+            let urlToSave = await exportForPhotosIfNeeded(localURL) ?? localURL
             try await PHPhotoLibrary.shared().performChanges {
-                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: localURL)
+                PHAssetChangeRequest.creationRequestForAssetFromVideo(atFileURL: urlToSave)
             }
             saveMessage = "تم حفظ المقطع في مكتبة الصور."
         } catch {

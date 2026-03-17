@@ -13,6 +13,14 @@ struct TrackedHand: Identifiable, Equatable {
     let landmarks: [Int: CGPoint]
 }
 
+/// Body pose landmark (normalized 0–1) for live skeleton overlay.
+struct PoseLandmark: Identifiable {
+    let id: Int
+    let x: CGFloat
+    let y: CGFloat
+    let z: CGFloat
+}
+
 final class CameraManager: NSObject, ObservableObject {
     @Published var trackedHands: [TrackedHand] = []
     @Published var raisedFingersCount = 0
@@ -21,6 +29,9 @@ final class CameraManager: NSObject, ObservableObject {
     @Published var isUsingFrontCamera = false
     @Published var isTorchOn = false
     @Published var isTorchAvailable = false
+    /// Live body pose for skeleton overlay (same as on analyzed clips).
+    @Published var poseLandmarks: [PoseLandmark] = []
+    @Published var poseConnections: [(Int, Int)] = []
 
     let session = AVCaptureSession()
 
@@ -220,6 +231,7 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
         guard let imageBase64 = makeBase64JPEG(from: sampleBuffer) else { return }
         isRequestInFlight = true
         sendFrameToMediaPipe(imageBase64: imageBase64)
+        sendFrameToPose(imageBase64: imageBase64)
     }
 
     private func makeBase64JPEG(from sampleBuffer: CMSampleBuffer) -> String? {
@@ -268,6 +280,32 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
                 self.trackedHands = stableHands
                 self.raisedFingersCount = count
                 self.interactionMessage = message
+            }
+        }.resume()
+    }
+
+    private func sendFrameToPose(imageBase64: String) {
+        guard let url = URL(string: AppConnection.mediaPipePoseURLString) else { return }
+        var request = URLRequest(url: url, timeoutInterval: 3)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        let payload = ["image_base64": imageBase64]
+        guard let body = try? JSONSerialization.data(withJSONObject: payload) else { return }
+        request.httpBody = body
+
+        URLSession.shared.dataTask(with: request) { [weak self] data, response, _ in
+            guard let self else { return }
+            guard let http = response as? HTTPURLResponse, http.statusCode == 200,
+                  let data else { return }
+            guard let apiResponse = try? JSONDecoder().decode(MediaPipePoseResponse.self, from: data),
+                  apiResponse.success else { return }
+            let landmarks = apiResponse.landmarks.map { lm in
+                PoseLandmark(id: lm.id, x: CGFloat(lm.x), y: CGFloat(lm.y), z: CGFloat(lm.z))
+            }
+            let connections = apiResponse.connections.map { c in (c[0], c[1]) }
+            DispatchQueue.main.async {
+                self.poseLandmarks = landmarks
+                self.poseConnections = connections
             }
         }.resume()
     }
@@ -392,6 +430,19 @@ private struct MediaPipeHandsResponse: Decodable, Sendable {
     }
 
     struct Landmark: Decodable, Sendable {
+        let id: Int
+        let x: Double
+        let y: Double
+        let z: Double
+    }
+}
+
+private struct MediaPipePoseResponse: Decodable, Sendable {
+    let success: Bool
+    let landmarks: [PoseLandmarkDTO]
+    let connections: [[Int]]
+
+    struct PoseLandmarkDTO: Decodable, Sendable {
         let id: Int
         let x: Double
         let y: Double

@@ -10,6 +10,8 @@ final class VisionViewModel: ObservableObject {
     @Published var isUsingFrontCamera = false
     @Published var isTorchOn = false
     @Published var isTorchAvailable = false
+    @Published var poseLandmarks: [PoseLandmark] = []
+    @Published var poseConnections: [(Int, Int)] = []
 
     let cameraManager = CameraManager()
     private var cancellables = Set<AnyCancellable>()
@@ -20,6 +22,14 @@ final class VisionViewModel: ObservableObject {
         cameraManager.$trackedHands
             .receive(on: RunLoop.main)
             .assign(to: &$trackedHands)
+
+        cameraManager.$poseLandmarks
+            .receive(on: RunLoop.main)
+            .assign(to: &$poseLandmarks)
+
+        cameraManager.$poseConnections
+            .receive(on: RunLoop.main)
+            .assign(to: &$poseConnections)
 
         cameraManager.$authorizationDenied
             .receive(on: RunLoop.main)
