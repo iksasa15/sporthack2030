@@ -50,6 +50,9 @@ private struct WorkoutsView: View {
     @State private var showVideoPicker = false
     @State private var pickedVideoItem: PhotosPickerItem?
     @State private var videoPickedMessage: String?
+    /// معاينة المقطع المختار (فيديو واحد — الاختيار الجديد يستبدل السابق).
+    @State private var previewVideoItem: IdentifiableURL?
+    /// عند الضغط على «رفع وتحليل» نفتح شاشة التحليل.
     @State private var selectedVideoForPose: IdentifiableURL?
 
     var body: some View {
@@ -129,7 +132,8 @@ private struct WorkoutsView: View {
                 Task {
                     if let video = try? await item.loadTransferable(type: VideoFile.self) {
                         await MainActor.run {
-                            selectedVideoForPose = IdentifiableURL(url: video.url)
+                            previewVideoItem = IdentifiableURL(url: video.url)
+                            pickedVideoItem = nil
                         }
                     } else {
                         await MainActor.run {
@@ -137,6 +141,17 @@ private struct WorkoutsView: View {
                         }
                     }
                 }
+            }
+            .fullScreenCover(item: $previewVideoItem) { item in
+                VideoPreviewBeforeUploadView(
+                    url: item.url,
+                    onUpload: {
+                        let url = item.url
+                        previewVideoItem = nil
+                        selectedVideoForPose = IdentifiableURL(url: url)
+                    },
+                    onDismiss: { previewVideoItem = nil }
+                )
             }
             .fullScreenCover(item: $selectedVideoForPose) { item in
                 VideoBodyPoseView(videoURL: item.url)

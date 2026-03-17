@@ -260,12 +260,11 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
             guard let http = response as? HTTPURLResponse, http.statusCode == 200,
                   let data else { return }
 
-            guard let apiResponse = try? JSONDecoder().decode(MediaPipeHandsResponse.self, from: data) else { return }
-            let hands = mapHands(from: apiResponse)
-            let stableHands = smooth(hands: hands)
-            let (count, message) = evaluateInteraction(from: stableHands)
-
             DispatchQueue.main.async {
+                guard let apiResponse = try? JSONDecoder().decode(MediaPipeHandsResponse.self, from: data) else { return }
+                let hands = self.mapHands(from: apiResponse)
+                let stableHands = self.smooth(hands: hands)
+                let (count, message) = self.evaluateInteraction(from: stableHands)
                 self.trackedHands = stableHands
                 self.raisedFingersCount = count
                 self.interactionMessage = message
@@ -377,22 +376,22 @@ extension CameraManager: AVCaptureVideoDataOutputSampleBufferDelegate {
     }
 }
 
-private struct MediaPipeHandsResponse: Decodable {
+private struct MediaPipeHandsResponse: Decodable, Sendable {
     let success: Bool
     let hands: HandsBody
 
-    struct HandsBody: Decodable {
+    struct HandsBody: Decodable, Sendable {
         let detected: Bool
         let hands: [Hand]
     }
 
-    struct Hand: Decodable {
+    struct Hand: Decodable, Sendable {
         let handedness: String
         let score: Double
         let landmarks: [Landmark]
     }
 
-    struct Landmark: Decodable {
+    struct Landmark: Decodable, Sendable {
         let id: Int
         let x: Double
         let y: Double

@@ -948,7 +948,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "نحتاج الكاميرا لتحديد الجسم وتتبع الحركة أثناء التمرين.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "لحفظ مقطع التحليل (تحديد الجسم) في مكتبة الصور.";
 				INFOPLIST_KEY_UIAppFonts = "IBMPlexSansArabic-Bold.ttf IBMPlexSansArabic-ExtraLight.ttf IBMPlexSansArabic-Light.ttf IBMPlexSansArabic-Medium.ttf IBMPlexSansArabic-Regular.ttf IBMPlexSansArabic-SemiBold.ttf IBMPlexSansArabic-Thin.ttf";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -994,7 +996,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "نحتاج الكاميرا لتحديد الجسم وتتبع الحركة أثناء التمرين.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "لحفظ مقطع التحليل (تحديد الجسم) في مكتبة الصور.";
 				INFOPLIST_KEY_UIAppFonts = "IBMPlexSansArabic-Bold.ttf IBMPlexSansArabic-ExtraLight.ttf IBMPlexSansArabic-Light.ttf IBMPlexSansArabic-Medium.ttf IBMPlexSansArabic-Regular.ttf IBMPlexSansArabic-SemiBold.ttf IBMPlexSansArabic-Thin.ttf";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
