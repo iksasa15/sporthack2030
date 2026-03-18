@@ -3,6 +3,7 @@ import SwiftUI
 struct ProfileView: View {
     @AppStorage(AppThemePalette.storageKey) private var selectedPaletteRaw = AppThemePalette.defaultPalette.rawValue
     @AppStorage(AppConnection.hostKey) private var backendHost = AppConnection.defaultHost
+    @AppStorage(AppConnection.useHTTPSKey) private var backendUseHTTPS = false
     @Environment(\.colorScheme) private var colorScheme
     @State private var hostInput = ""
     @State private var isTestingConnection = false
@@ -39,11 +40,17 @@ struct ProfileView: View {
                 .font(.appFont(.medium, size: 18))
                 .foregroundStyle(AppTheme.primaryText(for: colorScheme))
 
-            Text("ادخل IP السيرفر مع المنفذ، مثال: 192.168.1.10:5000")
+            Text("محلياً: IP:PORT مثل 192.168.1.10:5001. لصديق بمدينة ثانية: استخدم ngrok وضع العنوان بدون https، وفعّل «HTTPS» أدناه.")
                 .font(.appFont(.regular, size: 13))
                 .foregroundStyle(AppTheme.primaryText(for: colorScheme).opacity(0.7))
 
-            TextField("IP:PORT", text: $hostInput)
+            Toggle(isOn: $backendUseHTTPS) {
+                Text("HTTPS (ngrok / رابط عام)")
+                    .font(.appFont(.regular, size: 15))
+            }
+            .tint(AppTheme.interactive(for: colorScheme))
+
+            TextField("مثال: 192.168.1.5:5001 أو xxx.ngrok-free.app", text: $hostInput)
                 .font(.appFont(.regular, size: 15))
                 .textInputAutocapitalization(.never)
                 .disableAutocorrection(true)
@@ -98,7 +105,7 @@ struct ProfileView: View {
                 .disabled(isTestingConnection)
             }
 
-            Text("الرابط الحالي: http://\(AppConnection.normalizedHost(backendHost))")
+            Text("الرابط الحالي: \(AppConnection.useHTTPS ? "https" : "http")://\(AppConnection.normalizedHost(backendHost))")
                 .font(.appFont(.regular, size: 12))
                 .foregroundStyle(AppTheme.primaryText(for: colorScheme).opacity(0.68))
 

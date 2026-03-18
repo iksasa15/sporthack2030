@@ -97,4 +97,56 @@ extension Exercise {
     var descriptionAr: String? {
         description
     }
+
+    /// تمارين ثابتة لعرض الصفحة أثناء تصميم الواجهة أو عند تعطّل السيرفر.
+    static let designPlaceholders: [Exercise] = [
+        Exercise(
+            name: "Clam shells",
+            description: "تقوية عضلات الألوية والورك الجانبية.",
+            target: "hip",
+            sport: "football",
+            repsSets: "3×12",
+            difficulty: "متوسط"
+        ),
+        Exercise(
+            name: "Squat jump",
+            description: "انفجارية وقوة الساقين.",
+            target: "leg",
+            sport: "basketball",
+            repsSets: "3×8",
+            difficulty: "صعب"
+        ),
+        Exercise(
+            name: "Plank",
+            description: "ثبات الجذع والكتفين.",
+            target: "core",
+            sport: "generic",
+            repsSets: "3×45 ث",
+            difficulty: "سهل"
+        ),
+        Exercise(
+            name: "Single-leg balance",
+            description: "تحسين الثبات والكاحل.",
+            target: "balance",
+            sport: "football",
+            repsSets: "3×30 ث",
+            difficulty: "متوسط"
+        ),
+        Exercise(
+            name: "Hip flexor stretch",
+            description: "مرونة مقدمة الورك.",
+            target: "hip",
+            sport: "running",
+            repsSets: "2×30 ث",
+            difficulty: "سهل"
+        ),
+        Exercise(
+            name: "Band pull-apart",
+            description: "تقوية الكتف الخلفي.",
+            target: "shoulder",
+            sport: "tennis",
+            repsSets: "3×15",
+            difficulty: "سهل"
+        ),
+    ]
 }

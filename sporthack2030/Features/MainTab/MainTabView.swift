@@ -42,9 +42,10 @@ struct MainTabView: View {
 private struct WorkoutsView: View {
     @Binding var selectedTab: Int
     @Environment(\.colorScheme) private var colorScheme
-    @State private var exercises: [Exercise] = []
-    @State private var isLoading = true
-    @State private var errorMessage: String?
+    @State private var exercises: [Exercise] = Exercise.designPlaceholders
+    @State private var isRefreshing = false
+    /// true بعد فشل جلب التمارين من السيرفر
+    @State private var usingOfflinePlaceholders = false
     @State private var selectedExercise: Exercise?
     @State private var showExerciseAction = false
     @State private var showVideoPicker = false
@@ -58,24 +59,34 @@ private struct WorkoutsView: View {
     var body: some View {
         NavigationStack {
             Group {
-                if isLoading {
-                    ProgressView("جاري تحميل التمارين…")
-                        .font(.appFont(.regular, size: 16))
-                } else if let message = errorMessage {
-                    VStack(spacing: 12) {
-                        Text("حدث خطأ")
-                            .font(.appFont(.bold, size: 18))
-                        Text(message)
-                            .font(.appFont(.regular, size: 16))
-                            .multilineTextAlignment(.center)
-                    }
-                    .foregroundColor(AppTheme.primaryText(for: colorScheme))
-                } else if exercises.isEmpty {
+                if exercises.isEmpty {
                     Text("لا توجد تمارين لعرضها")
                         .font(.appFont(.regular, size: 18))
                         .foregroundColor(AppTheme.primaryText(for: colorScheme))
                 } else {
-                    List(exercises) { exercise in
+                    List {
+                        if isRefreshing {
+                            Section {
+                                HStack {
+                                    ProgressView()
+                                    Text("جاري التحديث من السيرفر…")
+                                        .font(.appFont(.regular, size: 13))
+                                }
+                                .listRowBackground(AppTheme.card(for: colorScheme))
+                            }
+                        }
+                        if usingOfflinePlaceholders {
+                            Section {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "wifi.slash")
+                                    Text("السيرفر غير متصل — تمارين للمعاينة والتصميم.")
+                                        .font(.appFont(.regular, size: 13))
+                                }
+                                .foregroundStyle(AppTheme.primaryText(for: colorScheme).opacity(0.85))
+                                .listRowBackground(AppTheme.card(for: colorScheme))
+                            }
+                        }
+                        ForEach(exercises) { exercise in
                         Button {
                             selectedExercise = exercise
                             showExerciseAction = true
@@ -104,12 +115,14 @@ private struct WorkoutsView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         .buttonStyle(.plain)
+                        }
                     }
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationTitle("التدريبات")
             .task { await loadExercises() }
+            .refreshable { await loadExercises() }
             .sheet(isPresented: $showExerciseAction) {
                 if let exercise = selectedExercise {
                     exerciseActionSheet(exercise: exercise)
@@ -268,15 +281,26 @@ private struct WorkoutsView: View {
     }
 
     private func loadExercises() async {
-        isLoading = true
-        errorMessage = nil
+        await MainActor.run { isRefreshing = true }
         do {
-            exercises = try await ExercisesService.fetchExercises(sport: nil)
+            let fetched = try await ExercisesService.fetchExercises(sport: nil)
+            await MainActor.run {
+                if fetched.isEmpty {
+                    exercises = Exercise.designPlaceholders
+                    usingOfflinePlaceholders = true
+                } else {
+                    exercises = fetched
+                    usingOfflinePlaceholders = false
+                }
+                isRefreshing = false
+            }
         } catch {
-            errorMessage = error.localizedDescription
-            exercises = []
+            await MainActor.run {
+                exercises = Exercise.designPlaceholders
+                usingOfflinePlaceholders = true
+                isRefreshing = false
+            }
         }
-        isLoading = false
     }
 }
 
